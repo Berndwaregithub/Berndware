@@ -8,3 +8,5 @@ Zweitens, fehlende Motivation hat uns daran gehindert, den Trigger kontinuierlic
 Schließlich haben wir uns für die Öffnung des Triggers für alle entschieden, um die Vorteile der Zusammenarbeit und des Wissensaustauschs zu nutzen. Indem wir den Code frei zugänglich machen, ermöglichen wir es anderen, von unseren Erfahrungen zu lernen und ihre eigenen Projekte zu bereichern.
 
 Wir sind gespannt auf die Beiträge und das Feedback der Community und hoffen, dass der Trigger durch die Öffnung für alle zu einem noch nützlicheren und vielseitigeren Werkzeug wird.
+
+#https://berndware.cc
