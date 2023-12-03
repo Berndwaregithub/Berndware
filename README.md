@@ -10,3 +10,4 @@ Schließlich haben wir uns für die Öffnung des Triggers für alle entschieden,
 Wir sind gespannt auf die Beiträge und das Feedback der Community und hoffen, dass der Trigger durch die Öffnung für alle zu einem noch nützlicheren und vielseitigeren Werkzeug wird.
 
 #https://berndware.cc
+#https://discord.gg/tDmYedrBEF
